@@ -76,6 +76,13 @@
                                     <action selector="agregarTapped:" destination="jmq-R6-TRi" eventType="touchUpInside" id="JvF-NA-leu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejh-cA-MFS">
+                                <rect key="frame" x="160" y="349" width="55" height="30"/>
+                                <state key="normal" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="jmq-R6-TRi" eventType="touchUpInside" id="wTz-Ek-ljZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -86,6 +93,8 @@
                             <constraint firstItem="bsA-ul-JmL" firstAttribute="top" secondItem="XgU-FQ-cQm" secondAttribute="bottom" constant="20" id="ffo-Uc-IVt"/>
                             <constraint firstItem="XgU-FQ-cQm" firstAttribute="centerX" secondItem="3Cf-Ch-YRY" secondAttribute="centerX" id="jcG-L7-DJO"/>
                             <constraint firstItem="bsA-ul-JmL" firstAttribute="centerX" secondItem="3Cf-Ch-YRY" secondAttribute="centerX" id="neE-tY-Rnc"/>
+                            <constraint firstItem="Ejh-cA-MFS" firstAttribute="top" secondItem="bsA-ul-JmL" secondAttribute="bottom" constant="15" id="uE4-zE-QcT"/>
+                            <constraint firstItem="Ejh-cA-MFS" firstAttribute="centerX" secondItem="3Cf-Ch-YRY" secondAttribute="centerX" id="yAr-B0-YcO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Ao-aY-aYt"/>
                     </view>
@@ -105,6 +114,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="JuegoImageView" destination="MKu-ag-yHo" id="Bsr-bM-EYW"/>
+                        <outlet property="agregarActualizarBoton" destination="bsA-ul-JmL" id="VND-GW-4wg"/>
+                        <outlet property="eliminarBoton" destination="Ejh-cA-MFS" id="J8A-tx-WKh"/>
                         <outlet property="tituloTextField" destination="XgU-FQ-cQm" id="DLG-kZ-HZn"/>
                     </connections>
                 </viewController>
