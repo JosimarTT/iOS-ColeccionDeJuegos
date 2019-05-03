@@ -46,6 +46,8 @@ class JuegoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     
     @IBAction func camaraTapped(_ sender: Any) {
+        imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func agregarTapped(_ sender: Any) {
